@@ -26,4 +26,4 @@ module.exports.checkpub = require('./checkpub');
 module.exports.collection = require('./collection');
 module.exports.jauth = require('./jauth');
 module.exports.jjlog = require('./jjlog');
-module.exports.lizard = reuqire('./lizard');
+module.exports.lizard = require('./lizard');
