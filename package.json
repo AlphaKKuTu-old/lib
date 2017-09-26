@@ -1,0 +1,25 @@
+{
+  "name": "kkutu-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/small-sunshines/kkutu-lib.git"
+  },
+  "author": "small-sunshines",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/small-sunshines/kkutu-lib/issues"
+  },
+  "homepage": "https://github.com/small-sunshines/kkutu-lib#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "pg": "^7.3.0",
+    "pg-escape": "^0.2.0",
+    "request": "^2.82.0"
+  }
+}
