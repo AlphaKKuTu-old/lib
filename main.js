@@ -22,8 +22,8 @@
  */
 
 module.exports.ajae = require('./ajae');
-module.exports.checkpug = require('./checkpub');
-module.exports.collecgtion = require('./collection');
+module.exports.checkpub = require('./checkpub');
+module.exports.collection = require('./collection');
 module.exports.jauth = require('./jauth');
 module.exports.jjlog = require('./jjlog');
 module.exports.lizard = reuqire('./lizard');
