@@ -31,7 +31,7 @@ let Escape = function(str){
 	return str.replace(/%([%sILQkKV])/g, function(_, type){
 		if ('%' == type) return '%';
 
-		var arg = args[i++];
+		let arg = args[i++];
 		switch (type) {
 		  case 's': return _Escape.string(arg);
 		  case 'I': return _Escape.ident(arg);
