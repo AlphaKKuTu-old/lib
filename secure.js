@@ -17,13 +17,20 @@
  */
 
 /**
- * 볕뉘 수정사항:
- * 이 파일을 통하여 모듈 로드가 가능하게끔 생성
+ * 볕뉘 수정사항
+ * 보안처리 관련 코드 생성
  */
 
-module.exports.ajae = require('./ajae');
-module.exports.checkpub = require('./checkpub');
-module.exports.collection = require('./collection');
-module.exports.jjlog = require('./jjlog');
-module.exports.lizard = require('./lizard');
-module.exports.secure = require('./secure');
+module.exports = (SSL_OPTIONS) => {
+    const options = {};
+    if(SSL_OPTIONS.isPFX == true) {
+        options.pfx = File.readFileSync(SSL_OPTIONS.PFX);
+    } else {
+        options.key = File.readFileSync(SSL_OPTIONS.PRIVKEY);
+        options.cert = File.readFileSync(SSL_OPTIONS.CERT);
+        if(SSL_OPTIONS.isCA == true) {
+            options.ca = File.readFileSync(SSL_OPTIONS.CA);
+        }
+    }
+    return options;
+}
