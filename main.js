@@ -27,3 +27,4 @@ module.exports.collection = require('./collection');
 module.exports.jjlog = require('./jjlog');
 module.exports.lizard = require('./lizard');
 module.exports.secure = require('./secure');
+module.exports.recaptcha = require('./recaptcha')
