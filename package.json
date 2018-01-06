@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/small-sunshines/kkutu-lib.git"
+    "url": "git+https://github.com/small-sunshines/morikkutu-lib.git"
   },
   "author": "small-sunshines",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/small-sunshines/kkutu-lib/issues"
+    "url": "https://github.com/small-sunshines/morikkutu-lib/issues"
   },
-  "homepage": "https://github.com/small-sunshines/kkutu-lib#readme",
+  "homepage": "https://github.com/small-sunshines/morikkutu-lib#readme",
   "dependencies": {
     "colors": "^1.1.2",
     "pg": "^7.3.0",
