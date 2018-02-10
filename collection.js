@@ -331,6 +331,7 @@ exports.Agent = function(type, origin){
 							return item[0] + ((item[1] == 1) ? ' ASC' : ' DESC');
 						}).join(','));
 						if(_my.findLimit) sql += Escape(" LIMIT %V", _my.findLimit);
+						sql.replace(/"([a-zA-Z]+)\(([a-zA-Z0-9_]+)\)"/g, '$1($2)');
 						break;
 					case "insert":
 						sql = Escape("INSERT INTO %I (%s) VALUES (%s)", col, sqlIK(q), sqlIV(q));
